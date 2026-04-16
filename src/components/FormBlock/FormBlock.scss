@@ -1,0 +1,30 @@
+.form-block {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+
+    &__controls {
+        display: flex;
+        gap: 12px;
+        margin-bottom: 24px;
+
+        button {
+            padding: 8px 16px;
+            cursor: pointer;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__debug {
+        margin-top: 24px;
+        padding: 16px;
+        background: #f5f5f5;
+        border-radius: 8px;
+        font-size: 12px;
+        overflow-x: auto;
+    }
+}
