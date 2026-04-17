@@ -1,4 +1,14 @@
 
+import React from 'react';
+import { FormBlock } from './components/FormBlock/FormBlock';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <FormBlock />
+
+
 import { CourseAccordion } from './CourseAccordion';
 import type { ICourseItem } from './types.ts';
 
@@ -35,10 +45,15 @@ function App() {
           <CourseAccordion key={course.id} course={course} />
         ))}
       </div>
+main
     </div>
   );
 }
 
+
 export default App;
 
 export default App;
+
+export default App;
+
