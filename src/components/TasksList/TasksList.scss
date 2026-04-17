@@ -1,0 +1,48 @@
+.tasks-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 16px;
+
+    &__label {
+        font-weight: 500;
+        font-size: 14px;
+        color: #333;
+    }
+
+    &__item {
+        display: flex;
+        gap: 8px;
+        align-items: flex-start;
+    }
+
+    &__input {
+        flex: 1;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-family: inherit;
+        font-size: 14px;
+        resize: vertical;
+        max-height: 500px;
+    }
+
+    &__remove {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    &__add {
+        background: none;
+        border: 1px dashed #ccc;
+        border-radius: 8px;
+        padding: 10px;
+        cursor: pointer;
+        color: #007bff;
+        font-size: 14px;
+        width: fit-content;
+    }
+}
