@@ -6,12 +6,12 @@ function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <div className="App">
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
       <button 
         onClick={() => setIsModalOpen(true)} 
         style={{
-          padding: '12px 24px',
-          fontSize: '16px',
+          padding: '14px 28px',
+          fontSize: '18px',
           backgroundColor: '#007bff',
           color: 'white',
           border: 'none',
