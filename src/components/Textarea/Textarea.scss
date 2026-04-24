@@ -1,0 +1,37 @@
+.textarea {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.textarea__label {
+    font-weight: 500;
+    font-size: 14px;
+    color: #333;
+}
+
+.textarea__field {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    resize: vertical;
+    font-family: inherit;
+    font-size: 14px;
+    transition: border 0.2s;
+
+    &:focus {
+        outline: none;
+        border-color: #007bff;
+    }
+
+    &--error {
+        border-color: #ff3b30;
+    }
+}
+
+.textarea__error {
+    color: #ff3b30;
+    font-size: 12px;
+    margin-top: 4px;
+}
