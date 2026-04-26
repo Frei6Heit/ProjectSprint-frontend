@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #ffffff;
+}
+
+.reports-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.reports {
+  width: 356px;
+  height: 739px;
+  padding: 15px 17px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  border-radius: 30px;
+  background: #f8f8fa;
+  overflow: hidden;
+}
+
+.reports__header {
+  width: 322px;
+  height: 40px;
+  padding: 11px 36px;
+  border-radius: 30px;
+  background: #efefef;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  text-align: center;
+}
+
+
+.reports__list {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.reports__card {
+  width: 321px;
+  min-height: 182px;
+  padding: 25px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+
+.reports__content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.reports__title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+}
+
+.reports__date {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  color: #000000;
+}
+
+.reports__button {
+  width: 273px;
+  height: 51px;
+  margin: 0 auto;
+  border: 1px solid #f3f3f3;
+  border-radius: 20px;
+  background: #ffffff;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+
+.reports__footer {
+  width: 322px;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+
+.reports__add {
+  width: 30px;
+  height: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 14px;
+  background: #000000;
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+button {
+  font-family: "Inter", sans-serif;
+}

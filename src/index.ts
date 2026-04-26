@@ -1,8 +1,11 @@
+import app from "./index.html";
+
 const server = Bun.serve({
-  port: 3000,
   routes: {
-    "/": () => new Response('Bun!'),
-  }
+    "/*": app,
+  },
+
+  development: true,
 });
 
 console.log(`Listening on ${server.url}`);
