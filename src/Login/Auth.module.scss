@@ -1,0 +1,237 @@
+.wrapper {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  margin: 0;
+}
+
+.leftSide {
+  flex: 0 0 50%;
+  position: relative;
+  background-color: #F3F3F3; // Фон всей страницы
+}
+
+.circle {
+  position: absolute;
+  width: 1173px;  
+  height: 1128px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+.circleLight {
+  background-color: #EAEAEA;
+  left: -313px;
+  margin-top: 294px;
+  z-index: 1;
+  
+}
+
+
+.circleMedium {
+  background-color: #D6D6D6;
+  left: -463px; 
+  margin-top: 87px; 
+  z-index: 2;
+}
+
+.circleDark {
+  background-color: #222222;
+  left: -546px; 
+  margin-top: 4px; 
+  z-index: 3;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.patternIcon {
+  width: 300px; 
+  height: auto;
+  margin-left: 30%; 
+  opacity: 1;
+}
+
+.rightSide {
+  flex: 0 0 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 32px;
+  padding: 64px 48px 40px; 
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+.avatarWrapper {
+  position: absolute;
+  top: -40px; 
+  left: 50%;
+  transform: translateX(-50%);
+  background: #FFFFFF; 
+  border-radius: 50%;
+  padding: 20px; 
+  margin-top: -32px;
+  
+}
+
+.avatarImage{
+    width: 47.02702713012695px;
+    height: 58.12499237060547px;
+}
+
+.submitBtn {
+  background: #e63246;
+  color: white;
+  border: none;
+  border-radius: 24px;
+  padding: 12px 32px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  float: right;
+  margin-top: 10px;
+  transition: transform 0.1s;
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 32px;
+
+  button {
+    background: none;
+    border: none;
+    color: #4646F4;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+}
+
+.formGroup {
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  svg {
+    position: absolute;
+    left: 16px;
+    color: #999;
+    width: 20px;
+    height: 20px;
+  }
+
+  .eyeBtn {
+    position: absolute;
+    right: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #999;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.input {
+  width: 100%;
+  padding: 14px 48px;
+  background: #f8f9fa;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.2s;
+
+  &::placeholder {
+    color: #adb5bd;
+  }
+
+  &:focus {
+    border-color: #ddd;
+    background: #fff;
+  }
+
+  &.error {
+    border-color: #fa5252;
+    background: #fff5f5;
+  }
+}
+
+.errorText {
+  color: #fa5252;
+  font-size: 12px;
+  margin-top: 4px;
+  margin-left: 16px;
+  display: block;
+}
+
+.checkboxGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  font-size: 14px;
+  color: #666;
+  cursor: pointer;
+}
+
+.submitBtn {
+  background: #E63246;
+  color: white;
+  border: none;
+  border-radius: 24px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  float: right;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.footerLinks {
+  margin-top: 48px;
+  font-size: 12px;
+  color: #666;
+  
+  a {
+    color: #fa5252;
+    text-decoration: none;
+    display: block;
+    margin-top: 4px;
+  }
+  
+}
