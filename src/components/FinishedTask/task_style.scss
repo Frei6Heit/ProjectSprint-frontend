@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(145deg, #eef2f8 0%, #e2e8f0 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, sans-serif;
+  padding: 2rem;
+}
+
+
+.cards-stack {
+  max-width: 460px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.task-card {
+  background: #ffffff;
+  border-radius: 32px;
+  box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.02);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 28px 40px -18px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.task-inner {
+  padding: 1.6rem 1.6rem 1.8rem 1.6rem;
+}
+
+.badge-solo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.circle-icon {
+  font-size: 36px;
+  font-weight: 500;
+  color: #2266cc;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge-text {
+  font-size: 18px;
+  font-weight: 550;
+  color: #0f2b3f;
+  letter-spacing: -0.2px;
+}
+
+.card-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.task-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #0a1c2f;
+  letter-spacing: -0.3px;
+  flex: 1;
+}
+
+.three-dots {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 6px 8px;
+  border-radius: 40px;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background: #f0f2f5;
+  }
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  background-color: #7f8fa4;
+  border-radius: 50%;
+  display: block;
+}
+
+.task-description {
+  font-size: 15px;
+  line-height: 1.45;
+  color: rgba(55, 75, 100, 0.8);
+  margin: 0.4rem 0 1.2rem 0;
+  letter-spacing: -0.2px;
+}
+
+.progress-block {
+  margin: 0.5rem 0 1.2rem 0;
+}
+
+.progress-header {
+  font-size: 15px;
+  font-weight: 530;
+  color: #1f3b4c;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.progress-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.progress-bar-wrapper {
+  flex: 2;
+  min-width: 160px;
+}
+
+.progress-bar-bg {
+  background: #e2e8f0;
+  border-radius: 60px;
+  height: 6px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background: #2d7aff;
+  width: 100%;
+  height: 100%;
+  border-radius: 60px;
+  transition: width 0.4s ease;
+}
+
+.percentage-value {
+  font-size: 0.95rem;
+  color: #2c6288;
+  letter-spacing: 0.2px;
+}
+
+.metrics-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.2rem;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.left-metrics {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.right-metrics {
+  display: flex;
+  align-items: center;
+}
+
+.metric-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #f8fafc;
+  padding: 0.45rem 1.1rem;
+  border-radius: 40px;
+  transition: background 0.2s;
+  cursor: default;
+
+  &:hover {
+    background: #edf2f7;
+  }
+}
+
+.hash-symbol {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2c6288;
+  line-height: 1;
+}
+
+.metric-icon-svg {
+  width: 18px;
+  height: 18px;
+  stroke: #4f7ea3;
+  stroke-width: 1.7;
+  fill: none;
+}
+
+.metric-number {
+  font-size: 16px;
+  font-weight: 540;
+  color: #3b5d82;
+}
+
+.metric-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #5b7c9e;
+}
+
+.days-chip {
+  background: #f8fafc;
+  padding: 0.45rem 1.2rem;
+  border-radius: 40px;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+hr.divider-soft {
+  display: none;
+}
+
+// Media Queries
+@media (max-width: 520px) {
+  .cards-stack {
+    max-width: 96%;
+  }
+
+  .task-inner {
+    padding: 1.2rem;
+  }
+
+  .task-title {
+    font-size: 1.4rem;
+  }
+
+  .metric-chip,
+  .days-chip {
+    padding: 0.35rem 0.9rem;
+  }
+
+  .metric-number,
+  .metric-label {
+    font-size: 14px;
+  }
+
+  .hash-symbol {
+    font-size: 18px;
+  }
+}
