@@ -22,7 +22,7 @@ function App() {
         Добавить отчёт
       </button>
 
-      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} title="Добавление  отчёта">
+      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} title="Добавление отчёта">
         <AddReportForm />
       </Modal>
     </div>
